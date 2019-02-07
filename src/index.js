@@ -28,7 +28,7 @@ const filename =
 
 async function screenshot() {
   console.log("Getting screenshot...");
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ["--no-sandbox"] });
   const page = await browser.newPage();
   page.setViewport({ width: 1042, height: 1600 });
   await page.goto(URL);
