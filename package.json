@@ -22,5 +22,9 @@
 	},
 	"scripts": {
 		"start": "node ./src/index.js"
+	},
+	"engines": {
+		"node": "11.7.0",
+		"yarn": "1.13.0"
 	}
 }
