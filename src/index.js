@@ -47,7 +47,7 @@ async function uploadToS3() {
     };
     s3.putObject(params, (err, data) => {
       if (err) {
-        console.log(err);
+        throw err;
       } else {
         console.log("Successful upload");
       }
