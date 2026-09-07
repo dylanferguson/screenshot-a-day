@@ -1,0 +1,11 @@
+overrides:
+  vite: npm:@voidzero-dev/vite-plus-core@0.3.0
+  vitest: 4.1.11
+
+# Vite+ core uses its own version number for Vite-compatible peer requests.
+peerDependencyRules:
+  allowedVersions:
+    vite: 0.3.0
+
+allowBuilds:
+  lefthook: true

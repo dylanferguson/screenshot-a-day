@@ -1,1 +1,1 @@
-worker: npm start
+worker: node --env-file-if-exists=.env src/index.js
